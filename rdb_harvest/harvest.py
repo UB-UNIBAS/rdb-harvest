@@ -27,7 +27,7 @@ class HarvestFDBData(object):
     >>> harvester.upload_to_elastic('ach')
     """
 
-    def __init__(self, user, password, elastic_url, base_path='', elastic_index_base='fdb-',
+    def __init__(self, user, password, elastic_url='https://localhost:9200/', base_path='', elastic_index_base='fdb-',
                  logger=logging.getLogger('fdb-harvester')):
         """
         Sets up an harvester for the FDB Data.
