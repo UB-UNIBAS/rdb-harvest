@@ -4,8 +4,8 @@ from xml.etree import ElementTree
 from datetime import date
 import os
 
-from oai import OAIHarvester
-from utility import *
+from .oai import OAIHarvester
+from .utility import *
 
 
 class HarvestFDBData(object):
